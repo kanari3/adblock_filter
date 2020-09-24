@@ -790,17 +790,11 @@ gyao.yahoo.co.jp##.ad
 
 
 
-!右欄いまどうしてるの広告
-twitter.com##[data-testid="trend"]:has-text(/推荐|Promoted|Gesponsert|Реклама|Promocionado|Sponsorisé|Uitgelicht|プロモーション/):upward(1)
-
-!https://twitter.com/okkinapanda
-twitter.com##div:has( > div > div > div > h2 > div > span:has-text(/Promoted Tweet|プロモツイート/) )
-
-!話題を検索上部の広告
-twitter.com##a[href*="src=promoted_trend_click"]
-twitter.com##a[href*="src=promoted_trend_click"] + div
-
-
+!タイムラインの広告
+!「Promoted」とだけでるやつ
+!twitter.com##:xpath(//span[(text()='Promoted' or text()='Gesponsert' or text()='Promocionado' or text()='Sponsorisé' or text()='Uitgelicht' or text()='推荐' or contains(text(), 'プロモーション'))]/../../../../..)
+!上記だとhttps://twitter.com/ogurayuka_0905でプロフィールが消える
+twitter.com##:xpath(//span[(text()='Promoted' or text()='Gesponsert' or text()='Promocionado' or text()='Sponsorisé' or text()='Uitgelicht' or text()='推荐' or text()='プロモーション')]/../../../../..)
 
 
 !facebook
