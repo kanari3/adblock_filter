@@ -795,6 +795,11 @@ gyao.yahoo.co.jp##.ad
 !上記だとhttps://twitter.com/ogurayuka_0905でプロフィールが消える
 twitter.com##:xpath(//span[(text()='Promoted' or text()='Gesponsert' or text()='Promocionado' or text()='Sponsorisé' or text()='Uitgelicht' or text()='推荐' or text()='プロモーション')]/../../../../..)
 
+!タイムラインの広告２
+!「Promoted by 〇〇」とでるやつ
+twitter.com##div[data-testid="placementTracking"]:has(svg + div[dir="auto"] > span:has-text(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|推薦|推荐|プロモーション/))
+
+
 
 
 
