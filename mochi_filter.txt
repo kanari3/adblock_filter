@@ -798,19 +798,18 @@ twitter.com##div[data-testid="placementTracking"]:has(svg + div[dir="auto"] > sp
 
 
 
+!右欄いまどうしてるの広告
+twitter.com##[data-testid="trend"]:has-text(/推荐|Promoted|Gesponsert|Реклама|Promocionado|Sponsorisé|Uitgelicht|プロモーション/):upward(1)
+
+!https://twitter.com/okkinapanda
+twitter.com##div:has( > div > div > div > h2 > div > span:has-text(/Promoted Tweet|プロモツイート/) )
+
+!話題を検索上部の広告
+twitter.com##a[href*="src=promoted_trend_click"]
+twitter.com##a[href*="src=promoted_trend_click"] + div
 
 
 
-
-
-
-! Twitterトラッカー
-!ブロック数が延々と増えるのでやめた。2019.10.23
-!||api.twitter.com/1.1/jot/client_event.json|$xmlhttprequest
-||api.twitter.com/1.1/jot/external_referer.json|$xmlhttprequest
-||api.twitter.com/1.1/onboarding/referrer.json|$xmlhttprequest
-||platform.twitter.com/oct.js|
-||twitter.com/etc/clientlibs/dtm/*/satelliteLib-$script
 
 
 !facebook
