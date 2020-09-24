@@ -790,6 +790,19 @@ gyao.yahoo.co.jp##.ad
 
 
 
+!右欄いまどうしてるの広告
+twitter.com##[data-testid="trend"]:has-text(/推荐|Promoted|Gesponsert|Реклама|Promocionado|Sponsorisé|Uitgelicht|プロモーション/):upward(1)
+
+!https://twitter.com/okkinapanda
+twitter.com##div:has( > div > div > div > h2 > div > span:has-text(/Promoted Tweet|プロモツイート/) )
+
+!話題を検索上部の広告
+twitter.com##a[href*="src=promoted_trend_click"]
+twitter.com##a[href*="src=promoted_trend_click"] + div
+
+
+
+
 !facebook
 ||scontent.xx.fbcdn.net/hads-
 facebook.com###stream_pagelet > #pagelet_megaphone
